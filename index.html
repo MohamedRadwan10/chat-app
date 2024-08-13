@@ -21,27 +21,33 @@
           <div class="upper"></div>
           <div class="mobile-info">
             <div class="profile">
-              <div class="profile-flex">
-                <i class="fa-solid fa-chevron-left"></i>
-                <div class="image">
-                  <img
-                    src="./image/avatar.jpg"
-                    alt="image"
-                    draggable="false"
-                    width="20px"
-                  />
+              <div class="container">
+                <div class="profile-flex">
+                  <i class="fa-solid fa-chevron-left"></i>
+                  <div class="profile-content">
+                    <div class="image">
+                      <img
+                        src="./image/avatar.jpg"
+                        alt="image"
+                        draggable="false"
+                        width="20px"
+                      />
+                    </div>
+                    <!-- !/image -->
+                    <div class="profile-flex-info">
+                      <h3 class="profile-flex-info-name">samuel green</h3>
+                      <span class="profile-flex-info-status"
+                        >Available to Walk</span
+                      >
+                    </div>
+                    <!-- !/profile-flex-info -->
+                  </div>
+                  <!-- ^/profile-content -->
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
                 </div>
-                <!-- !/image -->
-                <div class="profile-flex-info">
-                  <h3 class="profile-flex-info-name">samuel green</h3>
-                  <span class="profile-flex-info-status"
-                    >Available to Walk</span
-                  >
-                </div>
-                <!-- !/profile-flex-info -->
-                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <!-- ^/profile-flex-->
               </div>
-              <!-- ^/profile-flex-->
+              <!-- ^/container -->
             </div>
             <!-- ^/profile-->
             <div class="chat">
@@ -104,15 +110,17 @@
 
               <div class="radio">
                 <input type="radio" id="html" name="walk" value="HTML" />
-                <label for="html"
-                  >30 minute walk <span class="price">$29</span>
+                <label for="html" class="radio-label">
+                  <span class="txt">30 minute walk </span>
+                  <span class="price">$29</span>
                 </label>
               </div>
               <!-- ^/radio -->
               <div class="radio">
                 <input type="radio" id="html" name="walk" value="HTML" />
-                <label for="html"
-                  >1 hour walk <span class="price price2">$49</span></label
+                <label for="html" class="radio-label">
+                  <span class="txt">1 hour walk</span>
+                  <span class="price price2">$49</span></label
                 >
               </div>
               <!-- ^/radio -->

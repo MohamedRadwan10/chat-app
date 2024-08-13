@@ -5,13 +5,17 @@
 }
 :root {
   font-size: 16px;
-
   font-family: Rubik;
+}
+.container {
+  width: 80%;
+  margin: auto;
 }
 .chat-app {
   position: relative;
 }
 .flex-chat {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,10 +23,10 @@
 }
 .color {
   position: absolute;
-  top: -45%;
-  left: -13%;
-  width: 41%;
-  height: 130vh;
+  top: -40%;
+  left: -11%;
+  width: 37%;
+  height: 125vh;
   background: rgb(233, 66, 255);
   background: linear-gradient(
     180deg,
@@ -32,12 +36,12 @@
   border-radius: 999px;
 }
 .title {
-  width: 29%;
+  width: 30%;
   z-index: 3;
 }
 .title-h2 {
   color: hsl(271, 36%, 24%);
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 .title-p {
@@ -46,17 +50,18 @@
 }
 .mobile {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 70px;
   z-index: 3;
-  width: 23%;
-  height: 80vh;
+  width: 20%;
   background-color: #fff;
   border-radius: 25px;
   box-shadow: 5px 20px 20px 1px hsl(206, 6%, 79%);
   padding: 10px;
 }
 .mobile-info {
-  margin: auto;
   background-color: hsl(270, 20%, 96%);
   border-radius: 20px;
   padding-bottom: 10px;
@@ -69,33 +74,37 @@
     rgba(233, 66, 255, 1) 5%,
     rgba(136, 56, 255, 1) 100%
   );
-  padding: 25px 0 10px 30px;
+  padding: 25px 0 10px;
 }
 .upper {
   position: absolute;
   top: 0;
-  left: 25%;
+  left: 50%;
   transform: translatex(-50%);
   width: 50%;
   height: 30px;
   background-color: #fff;
   border-radius: 0 0 15px 15px;
-  margin-inline: 24%;
 }
+
 .profile-flex {
+  margin-top: 10px;
+  gap: 20px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
 }
 .profile-flex i {
   color: #fff;
   font-size: 14px;
 }
-.profile-flex i:last-child {
-  margin-left: 80px;
+.profile-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .image {
-  width: 10%;
+  width: 12%;
 }
 .image img {
   width: 100%;
@@ -106,7 +115,7 @@
 .profile-flex-info-name {
   color: #fff;
   text-transform: capitalize;
-  font-size: 10;
+  font-size: 12px;
 }
 .profile-flex-info-status {
   display: block;
@@ -121,7 +130,7 @@
   padding: 5px 8px;
   margin-left: 10px;
   margin-bottom: 10px;
-  font-size: 11px;
+  font-size: 8px;
 }
 .chat-left:nth-child(1) {
   margin-top: 10px;
@@ -132,7 +141,6 @@
 .chat-img {
   display: flex;
   justify-content: flex-end;
-  gap: 10px;
   width: 100%;
 }
 .img-border {
@@ -142,7 +150,7 @@
   margin-right: 10px;
 }
 .chat-img img {
-  width: 100%;
+  width: 80%;
   border-radius: 10px;
 }
 .flex-right-chat {
@@ -159,7 +167,7 @@
   background-color: #fff;
   padding: 5px;
   margin-right: 10px;
-  font-size: 11px;
+  font-size: 8px;
 }
 .chat-right:nth-child(2) {
   width: 32%;
@@ -170,13 +178,13 @@
 }
 .radio {
   position: relative;
-  width: 70%;
+  width: 60%;
   background: linear-gradient(
     90deg,
     rgba(233, 66, 255, 1) 5%,
     rgba(136, 56, 255, 1) 100%
   );
-  border-radius: 10px 10px 10px 2px;
+  border-radius: 12px 12px 12px 5px;
   padding: 10px 10px;
   margin-bottom: 10px;
   margin-left: 10px;
@@ -187,33 +195,34 @@ input[type="radio"] {
 .radio label::after {
   position: absolute;
   content: "";
-  width: 15px;
-  height: 15px;
-  top: 15px;
-  left: 10px;
+  width: 12px;
+  height: 12px;
+  top: 11px;
+  left: 11px;
   background-color: transparent;
   border-radius: 50%;
   outline: 2px solid hsl(289, 100%, 72%);
 }
 .radio label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: hsl(206, 6%, 79%);
-  font-size: 13px;
   margin-left: 25px;
+}
+.txt {
+  font-size: 8px;
 }
 .price {
   display: inline-block;
-  font-size: 20px;
+  font-size: 12px;
   color: #fff;
   font-weight: bold;
-  margin-left: 50px;
-}
-.price2 {
-  margin-left: 75px;
 }
 .typing {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 8px;
   width: 90%;
   border-radius: 25px;
   background-color: #fff;
@@ -228,8 +237,8 @@ input[type="radio"] {
   padding: 0 10px;
 }
 .typing button {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   background-color: hsl(271, 36%, 24%);
   border-radius: 50%;
   color: #fff;
@@ -240,10 +249,11 @@ input::placeholder {
 }
 .color-2 {
   position: absolute;
-  bottom: -70px;
+  top: 40%;
   right: 0;
+  transform: translatey(-26%);
   width: 20%;
-  height: 600px;
+  height: 80vh;
   background: rgb(233, 66, 255);
   background: linear-gradient(
     180deg,
@@ -252,7 +262,85 @@ input::placeholder {
   );
   border-radius: 400px 0 0 0;
 }
-@media (max-width: 375px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .mobile {
+    width: 30%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .flex-chat {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding-bottom: 50px;
+  }
+  .mobile {
+    width: 50%;
+  }
+  .profile {
+    font-size: 10px;
+    padding: 20px 0 5px 0;
+  }
+  .image {
+    width: 15%;
+  }
+  .profile-flex {
+    gap: 10px;
+  }
+  .profile-flex-info {
+    width: 60%;
+  }
+  .profile-flex-info-name {
+    font-size: 14px;
+  }
+  .profile-flex-info-status {
+    font-size: 12px;
+  }
+  .profile-flex i {
+    font-size: 12px;
+  }
+  .chat-left {
+    font-size: 10px;
+  }
+  .chat-right {
+    font-size: 10px;
+  }
+  .radio {
+    width: 70%;
+  }
+  .radio label span {
+    font-size: 12px;
+  }
+  .price {
+    font-size: 14px;
+    margin-right: 5px;
+  }
+  .radio label::after {
+    width: 10px;
+    height: 10px;
+  }
+  .typing {
+    padding: 5px;
+  }
+  .title {
+    width: 50%;
+    text-align: center;
+  }
+  .title-h2 {
+    font-size: 30px;
+  }
+  .color {
+    top: -30%;
+    width: 50%;
+  }
+  .color-2 {
+    top: 60%;
+    width: 50%;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
   .chat-app {
     padding-bottom: 50px;
   }
@@ -266,37 +354,29 @@ input::placeholder {
     padding-bottom: 20px;
   }
   .mobile {
-    width: 80%;
-    height: 80vh;
+    width: 60%;
   }
   .profile {
-    font-size: 8px;
-    padding: 25px 0 5px 0;
+    font-size: 10px;
+    padding: 20px 0 5px 0;
   }
   .image {
     width: 15%;
   }
   .profile-flex {
-    margin-left: 10px;
     gap: 10px;
   }
   .profile-flex-info {
-    width: 50%;
+    width: 60%;
   }
   .profile-flex-info-name {
-    font-size: 8px;
+    font-size: 12px;
   }
   .profile-flex-info-status {
-    font-size: 6px;
+    font-size: 10px;
   }
   .profile-flex i {
-    font-size: 8px;
-  }
-  .profile-flex i:first-child {
-    margin-left: 5px;
-  }
-  .profile-flex i:last-child {
-    margin-left: 15px;
+    font-size: 10px;
   }
   .chat-left {
     font-size: 8px;
@@ -305,46 +385,117 @@ input::placeholder {
     font-size: 8px;
   }
   .radio {
-    width: 75%;
-    padding: 7px 0 7px 5px;
+    width: 70%;
   }
   .radio label {
-    font-size: 8px;
-    margin-right: 5px;
+    font-size: 10px;
   }
   .price {
-    font-size: 10px;
+    font-size: 12px;
     margin-right: 5px;
-  }
-  .price2 {
-    margin-left: 65px;
   }
   .radio label::after {
     width: 10px;
     height: 10px;
-    top: 40%;
-    left: 5%;
   }
   .typing {
     padding: 5px;
-  }
-  .typing button {
-    width: 20px;
-    height: 20px;
-    font-size: 8px;
   }
   .title {
     width: 89%;
     text-align: center;
   }
   .title-h2 {
-    font-size: 30px;
+    font-size: 25px;
   }
   .color {
-    width: 60%;
-    height: 140vh;
+    top: -35%;
+    width: 70%;
+    border-radius: 0 0 1000px 0;
   }
   .color-2 {
+    top: 65%;
     width: 50%;
+    height: 70vh;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .chat-app {
+    padding-bottom: 50px;
+  }
+  .flex-chat {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+  .mobile-info {
+    padding-bottom: 20px;
+  }
+  .mobile {
+    width: 70%;
+  }
+  .profile {
+    font-size: 8px;
+    padding: 20px 0 5px 0;
+  }
+  .image {
+    width: 20%;
+  }
+  .profile-flex {
+    gap: 10px;
+  }
+  .profile-flex-info {
+    width: 60%;
+  }
+  .profile-flex-info-name {
+    font-size: 10px;
+  }
+  .profile-flex-info-status {
+    font-size: 6px;
+  }
+  .profile-flex i {
+    font-size: 8px;
+  }
+  .chat-left {
+    font-size: 6px;
+  }
+  .chat-right {
+    font-size: 6px;
+  }
+  .radio {
+    width: 70%;
+  }
+  .radio label {
+    font-size: 8px;
+  }
+  .price {
+    font-size: 10px;
+    margin-right: 5px;
+  }
+  .radio label::after {
+    width: 10px;
+    height: 10px;
+  }
+  .typing {
+    padding: 5px;
+  }
+  .title {
+    width: 89%;
+    text-align: center;
+  }
+  .title-h2 {
+    font-size: 25px;
+  }
+  .color {
+    top: -35%;
+    width: 70%;
+    border-radius: 0 0 999px 0;
+  }
+  .color-2 {
+    top: 60%;
+    width: 50%;
+    height: 70vh;
   }
 }
